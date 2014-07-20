@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+body {
+	min-width: 1000px;
+	background: #e4e9ef;
+}
+//头部
+.top {
+	width: 100%;
+	height: 622px;
+	background-image: image-url('imgbgstop.jpg');
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.nav {
+	width: 100%;
+	height: 42px;
+	background-image: image-url('bgnav01.jpg');
+	@include box-shadow(0 5px 5px rgba(4,0,0,.26));
+}
+.banner {
+	width: 100%;
+	height: 463px;
+}
+.main {
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.main-1 {
+	width: 100%;
+	overflow: hidden;
+}
+.main-1-r {
+	float: right;
+	width: 435px;
+	overflow: hidden;
+}
+.main-1-l {
+	float: left;
+	width: 553px;
+	height: 263px;
+	background-color: #1b4a7d;
+	margin-top: 13px;
+	position: relative;
+	overflow: hidden;
+}
+.main-2 {
+	@extend .main-1;
+	padding-top: 12px
+}
+.main-2-r {
+	float: right;
+	width: 326px;
+	overflow: hidden;
+}
+.main-2-l {
+	float: left;
+	width: 662px;
+	overflow: hidden
+}
+.footer {
+	width: 100%;
+	overflow: hidden;
+	background: #00305e;
+	margin-top: 20px;
+}
+.footer-nav {
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+}
