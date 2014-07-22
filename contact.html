@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/Global.css">
+	<link rel="stylesheet" href="css/sass.css">
+	<script src="js/sea.js"></script>
+	<script src="js/config.js"></script>
+	<script src="js/jquery191min.js"></script>
+	<script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=CD6ba8c1f1a1796342ff6eeaf4b1f576"></script>
+	<style>
+		#allmap {
+			width: 950px;height: 350px;
+		}
+	</style>
+</head>
+<body>
+	<div class="top1">
+		<div class="header clearfix">
+			<div class="search">
+				<div class="site-map">
+					<a href="#">联系我们</a>
+					<a href="#">网站地图</a>
+					<a href="#">订阅本站</a>
+				</div>
+				<div class="search-form clearfix">
+					<input type="text" name="Keyword" id="Keyword" class="ipt-keyword">
+					<input type="submit" name="search-btn" value=" " class="ipt-submit">
+				</div>
+			</div>
+			<div class="logo"><img src="images/imglogo.png" alt=""></div>
+		</div>
+		<div class="nav">
+			<div class="in-nav">
+				<ul>
+					<li><a href="#">集团概况</a></li>
+					<li><a href="#">聚焦铁投</a></li>
+					<li><a href="#">企业文化</a></li>
+					<li><a href="#">规划发展</a></li>
+					<li><a href="#">工程建设</a></li>
+					<li><a href="#">招标信息</a></li>
+					<li><a href="#">党务工作</a></li>
+					<li><a href="#">招商引资</a></li>
+					<li><a href="#">招贤纳才</a></li>
+					<li><a href="#">专题活动</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="cur-Column">集团概况</div>
+		<div class="position">
+			<div class="share">
+				<div style="float: left;">分享到&nbsp;&nbsp;</div> <div class="bshare-custom"><div class="bsPromo bsPromo2"></div><a title="分享到新浪微博" class="bshare-sinaminiblog"></a><a title="分享到腾讯微博" class="bshare-qqmb"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=4ba68e8a-61fd-4593-bd9d-4e4856938f74&amp;pophcol=1&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+			</div>
+			<div class="in-position">
+				您的位置 \   <a href="#">首页</a> > <a href="#">集团概况</a>
+			</div>
+		</div>
+	</div>
+	<div class="in-main">
+		<div class="in-main-1">
+			<h2 class="focus-h2">
+				<span class="colname">在线地图</span>
+			</h2>
+			<div class="map">
+				<div id="allmap"></div>
+			</div>
+		</div>
+		<div class="in-main-2 clearfix">
+			<div class="guestbook">
+				<h2 class="focus-h2">
+					<span class="colname">在线留言</span>
+				</h2>
+			</div>
+			<div class="contact">
+				
+				
+				<h3>温州市铁路与轨道交通投资集团有限公司</h3>
+				<p>公司地址：浙江省温州市鹿城区锦江路458号<br>　　　　　汇景•深蓝国际大厦8-11楼<br>
+					联系电话：0577-88080015<br>
+					传真号码：0577-88080015<br>
+					邮政编码：325000<br>
+					公司网址：http://www.wzrailway.com<br>
+					Email：wztietou@163.com
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="footer-nav">
+			<ul>
+				<li>
+					<a href="#" class="first-col">集团概况</a>
+					<a href="#">集团介绍</a>
+					<a href="#">组织结构</a>
+					<a href="#">管理层</a>
+					<a href="#">大事记</a>
+					<a href="#">领导关怀</a>
+				</li>
+				<li><a href="#" class="first-col">聚焦铁投</a></li>
+				<li><a href="#" class="first-col">企业文化</a></li>
+				<li><a href="#" class="first-col">规划发展</a></li>
+				<li><a href="#" class="first-col">工程建设</a></li>
+				<li><a href="#" class="first-col">招标信息</a></li>
+				<li><a href="#" class="first-col">党务工作</a></li>
+				<li><a href="#" class="first-col">招贤纳才</a></li>
+				<li><a href="#" class="first-col">联系我们</a></li>
+			</ul>
+			<div class="qrc">
+				<img src="images/imgqrc.jpg" alt="">
+				<img src="images/imgweibo.jpg" alt="" style="margin-top: 10px;">
+			</div>
+		</div>
+		<div class="footer-cnt">
+			<span class="tec">技术支持：<a href="http://cnvp.com.cn" title="温州网站建设" target="_blank">捷点科技</a></span>
+			<span class="copy">Copyright &copy; 2013 温州市铁路与轨道交通投资集团有限公司 All Rights Reserved.       浙ICP备13000562号</span>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+
+	// 百度地图API功能
+	var map = new BMap.Map("allmap");
+	map.centerAndZoom(new BMap.Point(120.70134,27.993676), 17);
+	//var marker1 = new BMap.Marker(new BMap.Point(120.70134,27.993676));  // 创建标注
+	//map.addOverlay(marker1);              // 将标注添加到地图中
+	//创建小狐狸
+	var pt = new BMap.Point(120.70134,27.994276);
+	var myIcon = new BMap.Icon("images/iconmap.png", new BMap.Size(67,84));
+	var marker2 = new BMap.Marker(pt,{icon:myIcon});  // 创建标注
+	map.addOverlay(marker2);              // 将标注添加到地图中
+
+	</script>
+</html>
