@@ -18,7 +18,8 @@ seajs.config({
         "lightbox":"lightbox/jquery.lightbox-0.5",
         "jCarousel": "jCarousel/3.0/jquery.jcarousel.min",
         "formValidator":"formValidator/2.6.2/jquery.validationEngine",
-        "tab":"tab/tab.js"
+        "tab":"tab/tab.js",
+        "txtscroller":"txtscroller/jqscroll.js"
     },
     preload:["easing","jCarousel"]
 })

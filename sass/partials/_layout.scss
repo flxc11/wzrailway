@@ -13,6 +13,11 @@ body {
 	-webkit-background-size: cover;
 	background-size: cover;
 }
+.top1 {
+	@extend .top;
+	height: 288px;
+	background-image: image-url('imgbgstop01.jpg');
+}
 .nav {
 	width: 100%;
 	height: 42px;
@@ -22,6 +27,7 @@ body {
 .banner {
 	width: 100%;
 	height: 463px;
+	overflow: hidden;
 }
 .main {
 	width: 1000px;
@@ -70,4 +76,46 @@ body {
 	width: 1000px;
 	margin: 0 auto;
 	overflow: hidden;
+}
+.cur-Column {
+	@include w1000();
+	font-weight: bold;
+	font-size: 24px;
+	color: #ab1520;
+	line-height: 40px;
+	padding-top: 40px;
+}
+.position {
+	@include w1000();
+}
+.in-main {
+	@include w1000();
+	overflow: hidden;
+}
+.in-main-1 {
+	overflow: hidden;
+}
+.in-main-2 {
+	@extend .in-main-1;
+	margin-top: 20px;
+}
+.in-main-r {
+	float: right;
+	width: 720px;
+	padding: 0 30px;
+	min-height:500px;
+	_height:expression(this.scrollHeight < 500 ? "500px" : "auto");
+	background: #fff;
+}
+.in-main-l {
+	background: #fff;
+	float: left;
+	width: 220px;
+}
+.g-n-l {
+	float: left;
+	width: 360px;
+	height: 262px;
+	overflow: hidden;
+	position: relative;
 }

@@ -12,8 +12,8 @@ body{height:100%;font-family: "微软雅黑", "Microsoft YaHei", "宋体", Arial
     color: #6d6c6c;
     line-height: 24px;
 }
-a {text-decoration:none; blr:expression(this.onFocus=this.blur()); color:#6d6c6c; outline-style:none;}
-a:hover { text-decoration: none; color:#ff8700;}
+a {text-decoration:none; blr:expression(this.onFocus=this.blur()); color:#5e6872; outline-style:none;}
+a:hover { text-decoration: none; color:#1b4a7d;}
 a:focus { -moz-outline-style: none; } /*针对firefox*/
 .fl{ float:left;}
 .fr{ float:right;}

@@ -3,14 +3,27 @@ define(function(require){
 	//require("modernizr");
 	require("myFocus");
 	require("tab");
-	//require("lightbox");
+	require("txtscroller");
     $(function(){
     	$("#demo").myFocus({
 			pattern:'mF_sohusports',
 			width:553,
 			height:263
     	});
-
+    	$("#g-focus").myFocus({
+			pattern:'mF_expo2010',
+			width:360,
+			height:262
+    	});
+    	$("#scrollDiv").Scroll({
+    		line:1,
+    		speed:500,
+    		timer:3000,
+    		up:"but_up",
+    		down:"but_down",
+    		Num: "but_num"
+    	});
+    	
 		/**
 		 * Note:
 		 **********************
